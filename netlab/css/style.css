@@ -1,0 +1,213 @@
+ *{margin: 0;padding: 0}
+    li{list-style: none;} 
+
+form a{text-decoration: none;}
+html,body {
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+.wrapper{text-align: center;}
+.header{
+    font-size: 25px;
+    font-family: Î¢ÈíÑÅºÚ;
+    color: rgb(208,135,50);
+}
+	
+form{
+    background: url(image/bg.png);
+    width: 260px;
+    height: 260px;
+    margin: 35px auto;
+    padding: 30px;
+    box-shadow:0px 1px 2px 1px #aaaaaa,
+    inset 0px 1px 1px rgba(255,255,255,0.7);
+    border-radius: 3px;
+}
+form ul{
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+form ul{
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+
+
+ul .remember{
+    font-size: 14px;
+    font-family: Î¢ÈíÑÅºÚ;
+    font-weight: bold;
+    color: rgb(98,94,91);
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+ul .remember input[type*="checkbox"]{
+    width: 20px;
+    height: 20px;
+    vertical-align: super;
+    margin-right: 12px;
+}
+.remember label {
+    cursor: pointer;
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    top: 7px;
+    left: 0;
+    background: #eee;
+    border:1px solid #cccccc;
+    border-radius: 4px;
+
+}
+
+ul li a{
+    font-size: 14px;
+    font-family: Arial;
+    color: rgb(152,142,135);
+    display: flex;
+    justify-content: center;
+}
+
+ul li input[type*="button"]{
+    width: 100%;
+    height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    background: -moz-linear-gradient(
+            top,
+            #94aa64 0%,
+            #7a924a 50%,
+            #607738);
+    background: -webkit-gradient(
+            linear, left top, left bottom,
+            from(#94aa64),
+            color-stop(0.50, #7a924a),
+            to(#607738));
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #7d8862;
+    -moz-box-shadow:
+            0px 1px 0px rgba(170,170,170,1),
+            inset 0px 1px 1px rgba(255,255,255,0.7);
+    -webkit-box-shadow:
+            0px 1px 0px rgba(170,170,170,1),
+            inset 0px 1px 1px rgba(255,255,255,0.7);
+    box-shadow:
+            0px 1px 0px rgba(170,170,170,1),
+            inset 0px 1px 1px rgba(255,255,255,0.7);
+    text-shadow:
+            0px -1px 0px rgba(000,000,000,0.3),
+            0px 0px 0px rgba(255,255,255,0);
+}
+ul li input[type*="button"]:hover{
+    opacity: 0.8;
+}
+ul li input[type*="button"]:active{
+    width: 100%;
+    height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    background: -moz-linear-gradient(
+            top,
+            #607738 0%,
+            #7a924a 50%,
+            #94aa64 );
+    background: -webkit-gradient(
+            linear, left top, left bottom,
+            from(#607738),
+            color-stop(0.50, #7a924a),
+            to(#94aa64));
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #7d8862;
+    -moz-box-shadow:
+            0px -1px 0px rgba(170,170,170,1),
+            inset 0px -1px 1px rgba(255,255,255,0.7);
+    -webkit-box-shadow:
+            0px -1px 0px rgba(170,170,170,1),
+            inset 0px -1px 1px rgba(255,255,255,0.7);
+    box-shadow:
+            0px -1px 0px rgba(170,170,170,1),
+            inset 0px -1px 1px rgba(255,255,255,0.7);
+    text-shadow:
+            0px 1px 0px rgba(000,000,000,0.3),
+            0px 0px 0px rgba(255,255,255,0);
+}
+
+/*Display the tick inside the checkbox*/
+.remember label:after {
+    opacity: 0.4;
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 5px;
+    background: transparent;
+    top: 6px;
+    left: 4px;
+    border: 3px solid #74884a;
+    border-top: none;
+    border-right: none;
+
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+/*Create the hover event of the tick*/
+.remember label:hover::after {
+    opacity: 0.7;
+}
+/*Create the checkbox state for the tick*/
+.remember input[type=checkbox]:checked + label:after {
+    opacity: 1;
+    border-color: #74884a;
+}
+
+/*SELECT W/DOWN-ARROW*/
+select#SelectUser
+{
+width                    : 190pt;
+height                   : 30pt;
+line-height              : 30pt;
+padding-right            : 20pt;
+text-indent              : 20pt;
+text-align               : left;
+vertical-align           : middle;
+border                   : 2px solid #e2983a;
+-moz-border-radius       : 6px;
+-webkit-border-radius    : 6px;
+border-radius            : 6px;
+-webkit-appearance       : none;
+-moz-appearance          : none;
+appearance               : none;
+font-family              : SimHei;
+font-size                : 14pt;
+font-weight              : 500;
+color                    : RGBA(3,48,82,0.7);
+cursor                   : pointer;
+outline                  : none;			   
+}
+
+/*LABEL FOR SELECT*/
+label#lblSelect{ position: relative; display: inline-block;}           
+        
